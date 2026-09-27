@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gujarati Association of San Diego (GASD)</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       TOP TORAN BAR (Left & Right Angled Cuts Framing the Logo)
+       ============================================================ -->
+  <div class="top-toran-wrapper">
+    <div class="toran-side toran-left">
+      <img src="assets/images/toran-left-cut.png" alt="Toran Border Left" class="toran-cut-img">
+    </div>
+    <div class="toran-logo-space"></div>
+    <div class="toran-side toran-right">
+      <img src="assets/images/toran-right-cut.png" alt="Toran Border Right" class="toran-cut-img">
+    </div>
+  </div>
+
+  <!-- ============================================================
+       HEADER (White Navbar with Centered Overlapping Logo)
+       ============================================================ -->
+  <header class="site-header">
+    <div class="header-inner">
+      
+      <!-- Left Navigation -->
+      <nav class="nav-group nav-left">
+        <a href="#home" class="nav-item active">Home</a>
+        <div class="nav-dropdown">
+          <a href="#about" class="nav-item">About <i class="fa-solid fa-chevron-down nav-chevron"></i></a>
+        </div>
+        <a href="#events" class="nav-item">Events</a>
+        <a href="#membership" class="nav-item">Membership</a>
+      </nav>
+
+      <!-- Center Logo (New Red Emblem Centered in Angled Toran Cut) -->
+      <div class="logo-container">
+        <a href="#home" class="logo-link">
+          <img src="assets/images/gasd-logo.png" alt="Gujarati Association of San Diego" class="logo-badge">
+        </a>
+      </div>
+
+      <!-- Right Navigation -->
+      <nav class="nav-group nav-right">
+        <div class="nav-dropdown">
+          <a href="#charity" class="nav-item">Charity <i class="fa-solid fa-chevron-down nav-chevron"></i></a>
+        </div>
+        <div class="nav-dropdown">
+          <a href="#education" class="nav-item">Education <i class="fa-solid fa-chevron-down nav-chevron"></i></a>
+        </div>
+        <a href="#resources" class="nav-item">Resources</a>
+        <a href="#contact" class="nav-item">Contact</a>
+        <a href="#search" class="nav-item nav-search" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ============================================================
+       HERO SECTION (Bright Panoramic Background, No Overlay)
+       ============================================================ -->
+  <section class="hero-section" id="home">
+    <div class="hero-image-wrap">
+      <img src="assets/images/hero-bg.jpg" alt="San Diego Skyline & Gujarati Heritage" class="hero-image">
+    </div>
+
+    <div class="hero-container">
+      <p class="hero-pretitle">WELCOME TO</p>
+      
+      <h1 class="hero-main-title">
+        Gujarati Association<br>of San Diego
+      </h1>
+      
+      <p class="hero-tagline">
+        Preserving Our Heritage <span class="tagline-dot">&bull;</span> Building Our Community<br>
+        Together in San Diego
+      </p>
+
+      <!-- Ornate Red Geometric Divider Motif -->
+      <div class="hero-motif-divider">
+        <svg width="220" height="20" viewBox="0 0 220 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="10" x2="82" y2="10" stroke="#b21f1d" stroke-width="2" stroke-linecap="round"/>
+          <path d="M86 10 L89 7.5 L92 10 L89 12.5 Z" stroke="#b21f1d" stroke-width="1.4" fill="none"/>
+          <circle cx="89" cy="10" r="1.2" fill="#b21f1d"/>
+          <path d="M96 10 L100 6.5 L104 10 L100 13.5 Z" stroke="#b21f1d" stroke-width="1.6" fill="none"/>
+          <circle cx="100" cy="10" r="1.4" fill="#b21f1d"/>
+          <path d="M110 10 L116 3.5 L122 10 L116 16.5 Z" stroke="#b21f1d" stroke-width="2.4" fill="none"/>
+          <path d="M113.5 10 L116 6.5 L118.5 10 L116 13.5 Z" fill="#b21f1d"/>
+          <path d="M128 10 L132 6.5 L136 10 L132 13.5 Z" stroke="#b21f1d" stroke-width="1.6" fill="none"/>
+          <circle cx="132" cy="10" r="1.4" fill="#b21f1d"/>
+          <path d="M140 10 L143 7.5 L146 10 L143 12.5 Z" stroke="#b21f1d" stroke-width="1.4" fill="none"/>
+          <circle cx="143" cy="10" r="1.2" fill="#b21f1d"/>
+          <line x1="150" y1="10" x2="220" y2="10" stroke="#b21f1d" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <!-- Action Buttons (Single Row) -->
+      <div class="hero-actions">
+        <a href="#events" class="action-btn btn-crimson">
+          <i class="fa-regular fa-calendar-days"></i>
+          <span>Upcoming Events</span>
+        </a>
+        <a href="#membership" class="action-btn btn-navy">
+          <i class="fa-solid fa-user-group"></i>
+          <span>Become a Member</span>
+        </a>
+        <a href="#donate" class="action-btn btn-amber">
+          <i class="fa-regular fa-heart"></i>
+          <span>Donate &amp; Support</span>
+        </a>
+        <a href="#video" class="action-btn btn-light-video">
+          <i class="fa-solid fa-play play-icon"></i>
+          <span>Watch Video</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 1: WHO WE ARE (About GASD)
+       ============================================================ -->
+  <section class="about-section" id="about">
+    <div class="about-mandala-bg"></div>
+    <div class="about-container">
+      
+      <!-- Left Content -->
+      <div class="about-content">
+        <p class="section-pretitle orange">WHO WE ARE</p>
+        <h2 class="section-title">Gujarati Association<br>of San Diego (GASD)</h2>
+        <p class="about-lead">
+          A cultural, charitable, and educational organization serving Gujarati-speaking families, individuals, youth, seniors, businesses, and supporters in San Diego.
+        </p>
+        <div class="mini-ornament">
+          <svg width="120" height="14" viewBox="0 0 120 14" fill="none">
+            <line x1="0" y1="7" x2="48" y2="7" stroke="#b21f1d" stroke-width="1.5"/>
+            <path d="M52 7 L56 3 L60 7 L56 11 Z" stroke="#b21f1d" stroke-width="1.5" fill="none"/>
+            <circle cx="56" cy="7" r="1.5" fill="#b21f1d"/>
+            <path d="M64 7 L68 4 L72 7 L68 10 Z" stroke="#b21f1d" stroke-width="1.5" fill="none"/>
+            <line x1="72" y1="7" x2="120" y2="7" stroke="#b21f1d" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <a href="#about" class="btn-crimson-solid">
+          <span>Learn More About GASD</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- Right Visual & 4 Pillars -->
+      <div class="about-right-pane">
+        <div class="about-landmark-wrap">
+          <img src="assets/images/about-san-diego.jpg" alt="San Diego California Tower & Balboa Park" class="about-landmark-img">
+        </div>
+
+        <!-- 4 Pillar Cards Row -->
+        <div class="about-cards-grid">
+          
+          <div class="pillar-mini-card">
+            <div class="pillar-icon-box orange">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <h3>Cultural</h3>
+            <p>Celebrating Gujarati culture, traditions and values</p>
+          </div>
+
+          <div class="pillar-mini-card">
+            <div class="pillar-icon-box blue">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+            <h3>Educational</h3>
+            <p>Supporting learning and youth development</p>
+          </div>
+
+          <div class="pillar-mini-card">
+            <div class="pillar-icon-box green">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <h3>Charitable</h3>
+            <p>Giving back to the community</p>
+          </div>
+
+          <div class="pillar-mini-card">
+            <div class="pillar-icon-box purple">
+              <i class="fa-solid fa-people-roof"></i>
+            </div>
+            <h3>Community</h3>
+            <p>Bringing people together in San Diego</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 2: UPCOMING EVENTS
+       ============================================================ -->
+  <section class="events-section" id="events">
+    <div class="events-container">
+      
+      <!-- Section Header -->
+      <div class="events-header-row">
+        <div class="events-header-text">
+          <div class="gold-pretitle">
+            <span class="gold-line"></span>
+            <span>DON'T MISS</span>
+            <span class="gold-line"></span>
+          </div>
+          <h2 class="events-main-title">Upcoming Events</h2>
+          <div class="gold-divider-motif">
+            <svg width="60" height="12" viewBox="0 0 60 12" fill="none">
+              <line x1="0" y1="6" x2="22" y2="6" stroke="#c89d3c" stroke-width="1.5"/>
+              <path d="M26 6 L30 2 L34 6 L30 10 Z" stroke="#c89d3c" stroke-width="1.5" fill="none"/>
+              <circle cx="30" cy="6" r="1.5" fill="#c89d3c"/>
+              <line x1="38" y1="6" x2="60" y2="6" stroke="#c89d3c" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <p class="events-subtitle">
+            Join us for cultural celebrations, community gatherings, and educational programs throughout the year.
+          </p>
+        </div>
+        
+        <a href="#events" class="btn-events-view-all">
+          <span>View All Events</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- 4 Events Cards Grid -->
+      <div class="events-grid">
+        
+        <!-- Card 1: Navratri -->
+        <div class="event-card">
+          <div class="event-img-wrap">
+            <img src="assets/images/event-navratri.jpg" alt="Navratri Garba Night" class="event-card-img">
+          </div>
+          <div class="event-card-body">
+            <div class="event-date-badge">
+              <span class="date-month">OCT</span>
+              <span class="date-day">12</span>
+            </div>
+            <div class="event-info">
+              <h3 class="event-title">Navratri Garba Night</h3>
+              <p class="event-tags">Dance &bull; Music &bull; Culture</p>
+            </div>
+            <a href="#navratri" class="event-arrow-btn" aria-label="View event details">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: Diwali -->
+        <div class="event-card">
+          <div class="event-img-wrap">
+            <img src="assets/images/event-diwali.jpg" alt="Diwali Celebration" class="event-card-img">
+          </div>
+          <div class="event-card-body">
+            <div class="event-date-badge">
+              <span class="date-month">NOV</span>
+              <span class="date-day">08</span>
+            </div>
+            <div class="event-info">
+              <h3 class="event-title">Diwali Celebration</h3>
+              <p class="event-tags">Lights &bull; Community &bull; Joy</p>
+            </div>
+            <a href="#diwali" class="event-arrow-btn" aria-label="View event details">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: Uttarayan -->
+        <div class="event-card">
+          <div class="event-img-wrap">
+            <img src="assets/images/event-uttarayan.jpg" alt="Uttarayan Celebration" class="event-card-img">
+          </div>
+          <div class="event-card-body">
+            <div class="event-date-badge">
+              <span class="date-month">JAN</span>
+              <span class="date-day">14</span>
+            </div>
+            <div class="event-info">
+              <h3 class="event-title">Uttarayan Celebration</h3>
+              <p class="event-tags">Kites &bull; Food &bull; Family</p>
+            </div>
+            <a href="#uttarayan" class="event-arrow-btn" aria-label="View event details">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4: Community Picnic -->
+        <div class="event-card">
+          <div class="event-img-wrap">
+            <img src="assets/images/event-picnic.jpg" alt="Community Picnic" class="event-card-img">
+          </div>
+          <div class="event-card-body">
+            <div class="event-date-badge">
+              <span class="date-month">MAR</span>
+              <span class="date-day">02</span>
+            </div>
+            <div class="event-info">
+              <h3 class="event-title">Community Picnic</h3>
+              <p class="event-tags">Fun &bull; Games &bull; Togetherness</p>
+            </div>
+            <a href="#picnic" class="event-arrow-btn" aria-label="View event details">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 3: GASD MEMBERSHIP
+       ============================================================ -->
+  <section class="membership-section" id="membership">
+    <div class="membership-container">
+      
+      <!-- Left: Hands Image -->
+      <div class="membership-photo-col">
+        <img src="assets/images/membership-hands.jpg" alt="Gujarati Culture & Traditions" class="membership-photo">
+      </div>
+
+      <!-- Center: Call to Action -->
+      <div class="membership-cta-col">
+        <p class="section-pretitle orange">BECOME A PART OF OUR FAMILY</p>
+        <h2 class="membership-title">GASD Membership</h2>
+        <p class="membership-desc">
+          Join a vibrant community that celebrates our heritage, supports education, and gives back to society. Be a part of something meaningful.
+        </p>
+        <a href="#join" class="btn-crimson-solid">
+          <span>Become a Member</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- Right: 4 Member Benefits -->
+      <div class="membership-benefits-col">
+        
+        <div class="benefit-row">
+          <div class="benefit-icon gold">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <div class="benefit-text">
+            <h4>Community Connection</h4>
+            <p>Meet and engage with families, friends and professionals</p>
+          </div>
+        </div>
+
+        <div class="benefit-row">
+          <div class="benefit-icon gold">
+            <i class="fa-solid fa-ticket"></i>
+          </div>
+          <div class="benefit-text">
+            <h4>Exclusive Event Access</h4>
+            <p>Priority registration and member benefits</p>
+          </div>
+        </div>
+
+        <div class="benefit-row">
+          <div class="benefit-icon gold">
+            <i class="fa-solid fa-tag"></i>
+          </div>
+          <div class="benefit-text">
+            <h4>Special Discounts</h4>
+            <p>Access to member-only programs and offers</p>
+          </div>
+        </div>
+
+        <div class="benefit-row">
+          <div class="benefit-icon gold">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="benefit-text">
+            <h4>Make a Greater Impact</h4>
+            <p>Support our cultural, educational and charitable initiatives</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 4: 3 FOCUS PILLARS
+       ============================================================ -->
+  <section class="pillars-section" id="pillars">
+    <div class="pillars-container">
+      
+      <!-- Card 1: Cultural Events -->
+      <div class="pillar-large-card">
+        <div class="pillar-card-photo">
+          <img src="assets/images/pillar-cultural.jpg" alt="Cultural Events" class="pillar-photo-img">
+        </div>
+        <div class="pillar-card-footer">
+          <h3 class="pillar-footer-title">Cultural Events</h3>
+          <p class="pillar-footer-desc">Garba, Diwali, Uttarayan and more</p>
+          <a href="#events" class="pillar-gold-link">
+            <span>Explore Events</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2: Educational Support -->
+      <div class="pillar-large-card">
+        <div class="pillar-card-photo">
+          <img src="assets/images/pillar-educational.jpg" alt="Educational Support" class="pillar-photo-img">
+        </div>
+        <div class="pillar-card-footer">
+          <h3 class="pillar-footer-title">Educational Support</h3>
+          <p class="pillar-footer-desc">Empowering our youth for a brighter future</p>
+          <a href="#education" class="pillar-gold-link">
+            <span>Learn More</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3: Charitable Initiatives -->
+      <div class="pillar-large-card">
+        <div class="pillar-card-photo">
+          <img src="assets/images/pillar-charitable.jpg" alt="Charitable Initiatives" class="pillar-photo-img">
+        </div>
+        <div class="pillar-card-footer">
+          <h3 class="pillar-footer-title">Charitable Initiatives</h3>
+          <p class="pillar-footer-desc">Serving and supporting with compassion</p>
+          <a href="#charity" class="pillar-gold-link">
+            <span>See Our Impact</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 5: GALLERY
+       ============================================================ -->
+  <section class="gallery-section" id="gallery">
+    <div class="gallery-container">
+      
+      <!-- Section Header -->
+      <div class="gallery-header">
+        <p class="section-pretitle navy-subtle">GALLERY</p>
+        <h2 class="gallery-title">Moments That Bring Us Together</h2>
+        <div class="gallery-divider">
+          <svg width="80" height="12" viewBox="0 0 80 12" fill="none">
+            <line x1="0" y1="6" x2="32" y2="6" stroke="#1a365d" stroke-width="1.5"/>
+            <path d="M36 6 L40 2 L44 6 L40 10 Z" stroke="#1a365d" stroke-width="1.5" fill="none"/>
+            <circle cx="40" cy="6" r="1.5" fill="#1a365d"/>
+            <line x1="48" y1="6" x2="80" y2="6" stroke="#1a365d" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- 5 Photo Thumbnails Grid -->
+      <div class="gallery-strip">
+        <div class="gallery-thumb">
+          <img src="assets/images/gallery-1.jpg" alt="Traditional Gujarati Garba Dance">
+        </div>
+        <div class="gallery-thumb">
+          <img src="assets/images/gallery-2.jpg" alt="San Diego Bay & Sailboats">
+        </div>
+        <div class="gallery-thumb">
+          <img src="assets/images/gallery-3.jpg" alt="Mandir Temple Architecture">
+        </div>
+        <div class="gallery-thumb">
+          <img src="assets/images/gallery-4.jpg" alt="Sunset Over San Diego Pier">
+        </div>
+        <div class="gallery-thumb">
+          <img src="assets/images/gallery-5.jpg" alt="Colorful Gujarati Folk Crafts">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 6: STAY CONNECTED (Newsletter Banner)
+       ============================================================ -->
+  <section class="newsletter-section">
+    <div class="newsletter-card">
+      <div class="newsletter-left">
+        <div class="newsletter-icon">
+          <i class="fa-regular fa-envelope-open"></i>
+        </div>
+        <div class="newsletter-text">
+          <h3 class="newsletter-title">Stay Connected</h3>
+          <p class="newsletter-desc">Get the latest updates on events, programs and community news.</p>
+        </div>
+      </div>
+      
+      <form class="newsletter-form" onsubmit="event.preventDefault();">
+        <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
+        <button type="submit" class="newsletter-submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 7: FOOTER
+       ============================================================ -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-container">
+      
+      <!-- Column 1: Brand Info -->
+      <div class="footer-col brand-col">
+        <div class="footer-logo-row">
+          <img src="assets/images/gasd-logo.png" alt="GASD Emblem" class="footer-logo">
+          <div class="footer-brand-text">
+            <h3>Gujarati Association<br>of San Diego</h3>
+            <p>Preserving Our Heritage<br>Building Our Community</p>
+          </div>
+        </div>
+        
+        <!-- Social Icons -->
+        <div class="footer-social-links">
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="footer-col links-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-nav-list">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#membership">Membership</a></li>
+          <li><a href="#charity">Charity</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Get In Touch -->
+      <div class="footer-col contact-col">
+        <h4 class="footer-heading">Get In Touch</h4>
+        <ul class="footer-contact-list">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>San Diego, CA</span>
+          </li>
+          <li>
+            <i class="fa-regular fa-envelope"></i>
+            <a href="mailto:info@gasd.org">info@gasd.org</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:8581234567">(858) 123-4567</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Copyright Sub-Footer -->
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom-inner">
+        <p class="copyright-text">&copy; 2024 Gujarati Association of San Diego. All Rights Reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <span class="legal-separator">|</span>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Toran Border Pattern -->
+    <div class="bottom-toran-bar"></div>
+  </footer>
+
+</body>
+</html>
