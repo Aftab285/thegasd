@@ -55,14 +55,14 @@ body {
 }
 
 /* ============================================================
-   TOP TORAN PATTERN WITH ANGLED CUTOUT FRAMING LOGO
+   TOP TORAN PATTERN - EDGE-TO-EDGE & HUGGING LOGO
    ============================================================ */
 .top-toran-wrapper {
   position: relative;
   width: 100%;
-  height: 48px;
+  height: 52px;
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: center;
   background: #ffffff;
   overflow: hidden;
@@ -72,7 +72,7 @@ body {
 
 .toran-side {
   flex: 1;
-  height: 48px;
+  height: 52px;
   overflow: hidden;
   display: flex;
 }
@@ -86,10 +86,10 @@ body {
 }
 
 .toran-cut-img {
-  height: 48px;
+  height: 52px;
   width: auto;
   max-width: none;
-  min-width: 550px;
+  min-width: 100%;
   display: block;
 }
 
@@ -103,10 +103,10 @@ body {
   object-position: left top;
 }
 
-/* Space between the two angled cuts where the logo rests */
+/* Space between the two bands where logo rests */
 .toran-logo-space {
-  width: 140px;
-  height: 48px;
+  width: 114px;
+  height: 52px;
   flex-shrink: 0;
   background: #ffffff;
 }
@@ -118,7 +118,7 @@ body {
   background: #ffffff;
   position: relative;
   z-index: 50;
-  height: 64px;
+  height: 60px;
   width: 100%;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
@@ -156,6 +156,7 @@ body {
   color: #9b1c20;
 }
 
+/* Active State for 'Home' */
 .nav-item.active {
   font-weight: 600;
   color: #1a365d;
@@ -172,6 +173,7 @@ body {
   border-radius: 2px;
 }
 
+/* Chevron Icon */
 .nav-chevron {
   font-size: 9px;
   margin-left: 3px;
@@ -179,6 +181,7 @@ body {
   vertical-align: middle;
 }
 
+/* Search Icon */
 .nav-search {
   font-size: 15px;
   color: #1a365d;
@@ -191,13 +194,13 @@ body {
 }
 
 /* ============================================================
-   CENTERED LOGO - FRAMED BY ANGLED CUTS
+   CENTERED LOGO - FRAMED CLOSELY BY THE BANDS
    ============================================================ */
 .logo-container {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: -30px;
+  top: -34px;
   z-index: 100;
 }
 
@@ -206,13 +209,13 @@ body {
 }
 
 .logo-badge {
-  width: 142px;
-  height: 142px;
+  width: 122px;
+  height: 122px;
   border-radius: 50%;
   object-fit: contain;
   background: #ffffff;
-  border: 4px solid #ffffff;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.16);
   display: block;
   transition: transform 0.25s ease;
 }
