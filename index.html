@@ -31,7 +31,7 @@
   <header class="site-header">
     <div class="header-inner">
       
-      <!-- Left Navigation -->
+      <!-- Left Navigation (Desktop) -->
       <nav class="nav-group nav-left">
         <a href="#home" class="nav-item active">Home</a>
         <div class="nav-dropdown">
@@ -44,7 +44,7 @@
       <!-- Center Logo Spacer -->
       <div class="header-logo-spacer"></div>
 
-      <!-- Right Navigation -->
+      <!-- Right Navigation (Desktop) -->
       <nav class="nav-group nav-right">
         <div class="nav-dropdown">
           <a href="#charity" class="nav-item">Charity <i class="fa-solid fa-chevron-down nav-chevron"></i></a>
@@ -59,8 +59,101 @@
         </a>
       </nav>
 
+      <!-- Mobile Menu Toggle Button -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open mobile menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
     </div>
   </header>
+
+  <!-- Mobile Navigation Backdrop & Slide-out Drawer -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <div class="mobile-drawer-brand">
+        <img src="assets/images/gasd-logo.png" alt="GASD Emblem" class="mobile-drawer-logo">
+        <div class="mobile-drawer-brand-text">
+          <span class="mobile-drawer-name">GASD</span>
+          <span class="mobile-drawer-sub">San Diego, CA</span>
+        </div>
+      </div>
+      <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    
+    <div class="mobile-nav-body">
+      <nav class="mobile-nav-list">
+        <a href="#home" class="mobile-nav-link active">
+          <i class="fa-solid fa-house"></i>
+          <span>Home</span>
+        </a>
+        <a href="#about" class="mobile-nav-link">
+          <i class="fa-solid fa-landmark"></i>
+          <span>About GASD</span>
+        </a>
+        <a href="#events" class="mobile-nav-link">
+          <i class="fa-solid fa-calendar-days"></i>
+          <span>Upcoming Events</span>
+        </a>
+        <a href="#membership" class="mobile-nav-link">
+          <i class="fa-solid fa-id-card"></i>
+          <span>Membership</span>
+        </a>
+        <a href="#charity" class="mobile-nav-link">
+          <i class="fa-solid fa-hand-holding-heart"></i>
+          <span>Charity &amp; Giving</span>
+        </a>
+        <a href="#education" class="mobile-nav-link">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>Education Support</span>
+        </a>
+        <a href="#gallery" class="mobile-nav-link">
+          <i class="fa-solid fa-images"></i>
+          <span>Photo Gallery</span>
+        </a>
+        <a href="#contact" class="mobile-nav-link">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Contact Us</span>
+        </a>
+      </nav>
+
+      <!-- Quick Action Buttons inside Mobile Drawer -->
+      <div class="mobile-drawer-actions">
+        <a href="#events" class="action-btn btn-crimson mobile-action-btn">
+          <i class="fa-regular fa-calendar-days"></i>
+          <span>Upcoming Events</span>
+        </a>
+        <a href="#membership" class="action-btn btn-navy mobile-action-btn">
+          <i class="fa-solid fa-user-group"></i>
+          <span>Become a Member</span>
+        </a>
+        <a href="#donate" class="action-btn btn-amber mobile-action-btn">
+          <i class="fa-regular fa-heart"></i>
+          <span>Donate &amp; Support</span>
+        </a>
+      </div>
+
+      <!-- Quick Contact Info inside Drawer -->
+      <div class="mobile-drawer-contact">
+        <div class="drawer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>San Diego, California</span>
+        </div>
+        <div class="drawer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:8581234567">(858) 123-4567</a>
+        </div>
+        <div class="drawer-contact-item">
+          <i class="fa-regular fa-envelope"></i>
+          <a href="mailto:info@gasd.org">info@gasd.org</a>
+        </div>
+      </div>
+    </div>
+  </aside>
 
   <!-- ============================================================
        HERO SECTION (Bright Panoramic Background, No Overlay)
@@ -589,6 +682,61 @@
     <!-- Bottom Toran Border Pattern -->
     <div class="bottom-toran-bar"></div>
   </footer>
+  <!-- ============================================================
+       MOBILE NAVIGATION JAVASCRIPT
+       ============================================================ -->
+  <script>
+    (function() {
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mobileDrawerClose = document.getElementById('mobileDrawerClose');
+      const mobileNavDrawer = document.getElementById('mobileNavDrawer');
+      const mobileNavBackdrop = document.getElementById('mobileNavBackdrop');
+      const navLinks = document.querySelectorAll('.mobile-nav-link, .mobile-action-btn');
 
+      function openDrawer() {
+        if (!mobileNavDrawer || !mobileNavBackdrop) return;
+        mobileNavDrawer.classList.add('open');
+        mobileNavBackdrop.classList.add('open');
+        mobileMenuBtn.classList.add('active');
+        mobileMenuBtn.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeDrawer() {
+        if (!mobileNavDrawer || !mobileNavBackdrop) return;
+        mobileNavDrawer.classList.remove('open');
+        mobileNavBackdrop.classList.remove('open');
+        mobileMenuBtn.classList.remove('active');
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      }
+
+      mobileMenuBtn?.addEventListener('click', function(e) {
+        e.stopPropagation();
+        if (mobileNavDrawer.classList.contains('open')) {
+          closeDrawer();
+        } else {
+          openDrawer();
+        }
+      });
+
+      mobileDrawerClose?.addEventListener('click', closeDrawer);
+      mobileNavBackdrop?.addEventListener('click', closeDrawer);
+
+      // Auto close drawer when any link is clicked
+      navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          closeDrawer();
+        });
+      });
+
+      // Close on escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && mobileNavDrawer.classList.contains('open')) {
+          closeDrawer();
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
