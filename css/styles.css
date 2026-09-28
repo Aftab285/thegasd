@@ -55,60 +55,68 @@ body {
 }
 
 /* ============================================================
-   TOP TORAN PATTERN - EDGE-TO-EDGE & HUGGING LOGO
+   TOP TORAN PATTERN - EDGE-TO-EDGE WITH PURE WHITE LOGO BACKING
    ============================================================ */
 .top-toran-wrapper {
   position: relative;
   width: 100%;
   height: 52px;
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  background: #ffffff;
-  overflow: hidden;
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
 }
 
-.toran-side {
-  flex: 1;
+.toran-tile-bar {
+  width: 100%;
   height: 52px;
-  overflow: hidden;
-  display: flex;
-}
-
-.toran-left {
-  justify-content: flex-end;
-}
-
-.toran-right {
-  justify-content: flex-start;
-}
-
-.toran-cut-img {
-  height: 52px;
-  width: auto;
-  max-width: none;
-  min-width: 100%;
+  background-image: url('../assets/images/toran-tile.png');
+  background-repeat: repeat-x;
+  background-position: top center;
+  background-size: auto 52px;
   display: block;
 }
 
-.toran-left .toran-cut-img {
-  object-fit: cover;
-  object-position: right top;
+/* Pure white circular backing seamlessly matching the white header */
+.logo-circular-backing {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -2px;
+  width: 142px;
+  height: 142px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
 }
 
-.toran-right .toran-cut-img {
-  object-fit: cover;
-  object-position: left top;
+.logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Space between the two bands where logo rests */
-.toran-logo-space {
-  width: 114px;
-  height: 52px;
+.logo-badge {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.logo-badge:hover {
+  transform: scale(1.03);
+}
+
+/* Space in navbar for the centered logo */
+.header-logo-spacer {
+  width: 142px;
+  height: 100%;
   flex-shrink: 0;
-  background: #ffffff;
 }
 
 /* ============================================================
@@ -193,36 +201,7 @@ body {
   color: #9b1c20;
 }
 
-/* ============================================================
-   CENTERED LOGO - FRAMED CLOSELY BY THE BANDS
-   ============================================================ */
-.logo-container {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -34px;
-  z-index: 100;
-}
 
-.logo-link {
-  display: block;
-}
-
-.logo-badge {
-  width: 122px;
-  height: 122px;
-  border-radius: 50%;
-  object-fit: contain;
-  background: #ffffff;
-  border: 3px solid #ffffff;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.16);
-  display: block;
-  transition: transform 0.25s ease;
-}
-
-.logo-badge:hover {
-  transform: scale(1.03);
-}
 
 /* ============================================================
    HERO SECTION (Bright, Vibrant, 100% No Overlay)
